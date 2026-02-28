@@ -1,0 +1,8 @@
+/target
+.env
+.DS_Store
+
+# Generated output images
+*_clean.*
+*_compare.png
+watermark.png

@@ -1,0 +1,20 @@
+[package]
+name = "gemini-watermark-remover-rs"
+version = "0.2.0"
+edition = "2024"
+description = "A Rust-based Gemini watermark remover using reverse alpha blending with NCC detection"
+authors = ["JohnDotOwl"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/JohnDotOwl/gemini-watermark-remover-rs"
+keywords = ["gemini", "watermark", "image", "cli", "rust"]
+categories = ["command-line-utilities", "multimedia::images"]
+
+[dependencies]
+image = "0.25"
+clap = { version = "4.5", features = ["derive"] }
+rayon = "1.10"
+
+[[bin]]
+name = "gemini-watermark-remover-rs"
+path = "src/main.rs"
